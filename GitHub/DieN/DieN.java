@@ -1,33 +1,53 @@
 
 /**
- * Write a description of class DieN here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * Abstracts one six-sided die (plural is dice)
+ * 
+ * @Mr. Jaffe
+ * @1.0 2017-07-13
  */
 public class DieN
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    /**
+     * Contains the current value of the die
+     */
+    private int value;
+    private int n;
 
     /**
-     * Constructor for objects of class DieN
+     * Constructor to do an initial roll to set the first value
      */
-    public DieN()
-    {
-        // initialise instance variables
-        x = 0;
+    public DieN(int sides) {
+        if (sides < 2) {
+            throw new IllegalArgumentException ("The die must have at least 2 sides.");
+        }
+        this.n = sides;
+        this.roll();
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Getter for value
+     * @return Die value
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int getValue() {
+        return value;
     }
+
+    /**
+     * Roll the die! Generate random number 1 <= x <= 6 and assign to value
+     * Note that roll does NOT return the new value
+     */
+    public void roll() {
+        this.value = (int)(Math.random() * n) + 1;
+    }
+
+    /**
+     * Roll the die and return the new value
+     * @return Die value
+     */
+    public int rollAndGetValue() {
+        roll();
+        return getValue();
+    }
+
 }
+
