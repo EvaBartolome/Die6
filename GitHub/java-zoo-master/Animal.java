@@ -10,14 +10,14 @@ public abstract class Animal
   // instance variables - replace the example below with your own
   private String color;
   private int legs;
-  private String studentName;
+  private String BartolomeEva;
 
   /**
    * Constructor
    */
   public Animal()
   {
-    this("Unknown student", "Colorless", 4); // Default is a black animal with 4 legs
+    this("Unknown student", "Grey", 2); // Default is a black animal with 4 legs
   }
   
   /**
@@ -26,10 +26,10 @@ public abstract class Animal
    * @param color Initial color
    * @param legs Initial # of legs
    */
-  public Animal(String studentName, String color, int legs) {
-    this.studentName = studentName;
+  public Animal(String BartolomeEva, String color, int legs) {
+    this.BartolomeEva = BartolomeEva;
     this.color = color;
-    this.legs = legs;
+    this.legs = 4;
   }
   
   /**
@@ -69,8 +69,8 @@ public abstract class Animal
    * 
    * @return The student name
    */
-  public String getStudentName() {
-    return this.studentName;
+  public String getBartolomeEva() {
+    return this.BartolomeEva;
   }
   
   /**
@@ -78,7 +78,7 @@ public abstract class Animal
    * method or default speak will generate "Yaba-daba-doo"
    */
   public String speak() {
-    return "Yaba-daba-doo";
+    return "honk honk";
   }
   
   /**
@@ -89,7 +89,7 @@ public abstract class Animal
    * @return Disposition
    */
   public String getDisposition() {
-    return "meh";
+    return "aggressive and fast";
   }
   
   /**
@@ -108,7 +108,7 @@ public abstract class Animal
    * @return The name of the animal (i.e. "Fido", "Rover")
    */
   public String getName() {
-    return "No name defined - bummer";
+    return "Marty";
   }
   
   /**

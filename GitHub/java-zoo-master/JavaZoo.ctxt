@@ -1,4 +1,6 @@
 #BlueJ class context
-comment0.params=args
-comment0.target=void\ main(java.lang.String[])
-numComments=1
+comment0.target=JavaZoo
+comment0.text=\n\ Write\ a\ description\ of\ class\ JavaZoo\ here.\n\ \n\ @author\ Mr.\ Jaffe\n\ @version\ 2017-07-014\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
